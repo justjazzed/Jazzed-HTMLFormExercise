@@ -3,6 +3,9 @@ body{
     height: 100vh;
     margin: 0;
     background-color: rgba(228, 208, 168);
-   
-
+}
+label{
+    display: inline-block;
+    background-color: aqua;
+    margin: 0.5rem 0;
 }
