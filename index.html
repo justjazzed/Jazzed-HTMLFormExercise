@@ -20,11 +20,11 @@
     <form action="#">
       <!-- Fieldset1 first name,last name,email and password -->
       <fieldset>
-            <label for="#">Enter your First Name: <input type="text" required></label>
-            <label for="#">Enter your Last Name: <input type="text" required></label>
-            <label for="#">Enter your Email: <input type="email" required></label>
+            <label for="#">Enter your First Name: <input type="text" name="FirstName" required></label>
+            <label for="#">Enter your Last Name: <input type="text" name="LastName" required></label>
+            <label for="#">Enter your Email: <input type="email" name="Email" required></label>
             <!-- <label for="3">Enter your Password: <input type="password" maxlength="16" pattern="[a-z0-5{8,}]" required></label> -->
-            <label for="3">Enter your Password: <input type="password" maxlength="16" pattern="[a-z0-5]{8}" required></label>
+            <label for="3">Enter your Password: <input type="password" maxlength="16" pattern="[a-z0-5]{8}" name="password" required></label>
           </fieldset>
 
       <!-- Fieldset2 -->
@@ -35,23 +35,23 @@
       </fieldset>
       <!-- Fieldset3 -->
       <fieldset>
-          <label>Upload a profile picture:<input type="file"> </label>
-          <label for="#">Input you age(years): <input type="number" min="13" max="120"></label>
+          <label>Upload a profile picture:<input type="file" name="fileupload"> </label>
+          <label for="#">Input you age(years): <input type="number" name="age" min="13" max="120"></label>
           <label for=""> 
           how did you hear from us
-          <select name="" id="">
+          <select name="referer" id="">
             <label for="">
-              <option value="">(select one)</option>
-              <option value="1">News</option>
-              <option value="2">Blog</option>
-              <option value="3">Forums</option>
-              <option value="4">Others</option>
+              <option value="" >(select one)</option>
+              <option value="1"name="News" >News</option>
+              <option value="2"name="blog">Blog</option>
+              <option value="3"name="forums">Forums</option>
+              <option value="4"name="others">Others</option>
             </label>
           </select>
         </label>
         <label for="">
           Provide a bio:
-          <textarea name="" id="" cols="30" rows="10">Provide a Death Note here: </textarea>
+          <textarea name="" id="" cols="30" rows="10" name="bio">Provide a Death Note here: </textarea>
         </label>
         </fieldset>
       <input type="submit" value="submit">
