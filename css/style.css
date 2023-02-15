@@ -8,3 +8,6 @@ label{
     display: inline-block;
     margin: 0.5rem 0;
 }
+textarea{
+    color: aqua;
+}
